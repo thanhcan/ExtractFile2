@@ -120,8 +120,7 @@ public class StatisticWords {
 		
 		for (i = 0; i < 30; i++)
 		{
-			//noun = Normalizer.normalize(words[i],Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
-			
+			//noun = Normalizer.normalize(str, Normalizer.Form.NFD).replace("đ", "d").replace("Đ", "D").replaceAll("[^\\p{ASCII}]", "");
 			noun = words[i];
 			for (j = 0; j < words[i].length(); j++)
 			{
